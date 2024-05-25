@@ -1,4 +1,10 @@
-import { Nationality } from "./shared";
+import {
+  Nationality,
+  DateString,
+  Money,
+  Phone,
+  Email,
+} from "./shared";
 
 export type Skill = string;
 
@@ -10,20 +16,20 @@ export type Employee = {
   departmentId: number;
   keycardId: string;
   account: string;
-  salary: number;
+  salary: Money;
   office: [string, string];
   firstName: string;
   lastName: string;
   title: string;
   contractType: ContractType;
-  email: string;
-  hiredAt: string;
-  expiresAt: string;
+  email: Email;
+  hiredAt: DateString;
+  expiresAt: DateString;
   personalInfo: {
     age: number;
-    phone: string;
-    email: string;
-    dateOfBirth: string;
+    phone: Phone;
+    email: Email;
+    dateOfBirth: DateString;
     address: {
       street: string;
       city: string;
@@ -32,5 +38,4 @@ export type Employee = {
   };
   skills: Skill[];
   bio: string;
-  imgURL: string;
 };

@@ -3,8 +3,9 @@
   "editor.indentSize": 2,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
-  "prettier.printWidth": 60,
+  "prettier.printWidth": 80,
   "editor.fontSize": 22,
   "terminal.integrated.fontSize": 22,
-  "editor.minimap.enabled": false
+  "editor.minimap.enabled": false,
+  "typescript.tsdk": "node_modules/typescript/lib"
 }
