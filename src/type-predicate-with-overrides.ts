@@ -6,6 +6,4 @@ function isTypeof(value: any, typeString: string): boolean {
 }
 
 const value: unknown = {};
-if (isTypeof(value, "boolean")) {
-  value;
-}
+isTypeof(value, "boolean") && value;
